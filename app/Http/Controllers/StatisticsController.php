@@ -64,7 +64,8 @@ class StatisticsController extends Controller
                 'posts' => count($posts),
                 'feedback' => count($feedback),
                 'likes' => $likes,
-                'views' => $views
+                'views' => $views,
+                'post_data' => Posts::all()
             ]
         ]);
     }
