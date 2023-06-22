@@ -27,6 +27,7 @@
                                     <thead class="border-b font-medium dark:border-neutral-500">
                                         <tr>
                                             <th scope="col" class="px-6 py-4">No</th>
+                                            <th scope="col" class="px-6 py-4">Slug</th>
                                             <th scope="col" class="px-6 py-4">Name</th>
                                             <th scope="col" class="px-6 py-4">Feed back</th>
                                             <th scope="col" class="px-6 py-4">Action</th>
@@ -36,6 +37,7 @@
                                         @forelse ($feedback as $i=> $item)
                                             <tr class="border-b dark:border-neutral-500">
                                                 <td class="whitespace-nowrap px-6 py-4 font-medium">{{ $i + 1 }}</td>
+                                                <td class="whitespace-nowrap px-6 py-4">{{ $item->slug }}</td>
                                                 <td class="whitespace-nowrap px-6 py-4">{{ $item->name }}</td>
                                                 <td class="whitespace-nowrap px-6 py-4">{{ $item->feedback }}</td>
                                                 <td class="whitespace-nowrap px-6 py-4">
