@@ -14,4 +14,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: ls
+          script: cd public_html && cd web && cd ${{ secrets.FOLDER_NAME }} && ls
