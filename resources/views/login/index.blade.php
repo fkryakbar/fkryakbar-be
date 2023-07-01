@@ -34,7 +34,7 @@
                     <div class="mt-2">
                         <div
                             class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                            <input type="text" name="password" id="password" autocomplete="none"
+                            <input type="password" name="password" id="password" autocomplete="none"
                                 class="focus:outline-0 block flex-1 border-0 bg-transparent py-1.5 pl-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                                 placeholder="********">
                         </div>
@@ -44,6 +44,10 @@
                     <button class="bg-black text-white px-2 py-1 font-bold text-sm rounded">Login</button>
                 </div>
             </form>
+            <p class="text-center text-xs text-gray-500 mt-3">This site is a counter Manager for <a
+                    href="https://ninepmx.my.id" class="hover:underline text-blue-500 hover:text-blue-700"
+                    target="_blank">ninepmx.my.id</a>
+            </p>
         </div>
     </div>
 @endsection
